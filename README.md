@@ -3,6 +3,8 @@
 A **JavaScript tool** to automatically create structured **workouts in Garmin Connect** – directly from your browser.
 The program reads training plans from a **CSV file**, converts them into the JSON format required by Garmin, and uploads them to Garmin Connect via API.
 
+<img src="HeroImage.png" alt="Workout Builder Flowchart" width="400">
+
 ## ✨ Features
 
 * Automatically create **workouts** in Garmin Connect (running, cycling, etc.,, change as needed)
