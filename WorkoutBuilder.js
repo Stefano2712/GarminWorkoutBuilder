@@ -1,16 +1,13 @@
 /**
- * CSV -> Garmin Workouts (konformes JSON)
+ * Garmin Workout Builder
+ * ----------------------
+ * A JavaScript tool to create and upload custom workouts to Garmin Connect.
+ * Workouts are defined in a CSV file and converted into the Garmin Connect JSON format,
+ * supporting warmup, cooldown, steady steps, and repeat (interval) steps.
  *
- * CSV-Layout (Header optional, wird ignoriert, einfache CSV ohne eingebettete Kommas empfohlen):
- * Name,Abschnitte,WarmupMin,CooldownMin,
- * Step1_Name,Step1_DurationMin,Step1_PauseMin,Step1_Repeats,
- * Step2_Name,Step2_DurationMin,Step2_PauseMin,Step2_Repeats, ...
- *
- * Beispiele:
- * Morgenlauf,2,5,5,Zone2,15,0,0,Zone3,10,0,0
- * Intervall,1,10,5,Zone5,2,1,3
+ * Author: Stefano2723
+ * License: Apache 2.0
  */
-
 (async function() {
   // ---------- Hilfsfunktionen ----------
   function parseCSVLine(line) {
@@ -209,7 +206,7 @@
             stepOrder: stepOrder++,
             stepType: { stepTypeId: 2, stepTypeKey: "cooldown", displayOrder: 2 },
             type: "ExecutableStepDTO",
-            endCondition: { conditionTypeId: 2, conditionTypeKey: "lap.button", displayOrder: 2, displayable: true },
+            endCondition: { conditionTypeId: 1, conditionTypeKey: "lap.button", displayOrder: 2, displayable: true },
             endConditionValue: 0,
             description: "Zone 1",
             stepAudioNote: null,
@@ -298,4 +295,4 @@
   };
   input.click();
 
-})(); // IIFE Ende
+})();
