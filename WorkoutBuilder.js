@@ -80,7 +80,7 @@
             type: "ExecutableStepDTO",
             endCondition: { conditionTypeId: 2, conditionTypeKey: "time", displayOrder: 2, displayable: true },
             endConditionValue: warmupSec,
-            description: "Zone 1",
+            description: "Z1",
             stepAudioNote: null,
             targetType: { workoutTargetTypeId: 1, workoutTargetTypeKey: "no.target", displayOrder: 1 }
           });
@@ -132,7 +132,7 @@
               type: "ExecutableStepDTO",
               endCondition: null, // set below
               endConditionValue: null,
-              description: pauseSec > 0 ? "Recovery" : "Recovery (lap)",
+              description: "Z1",
               stepAudioNote: null,
               childStepId: child1.stepId,
               preferredEndConditionUnit: null,
@@ -193,7 +193,7 @@
             type: "ExecutableStepDTO",
             endCondition: { conditionTypeId: 2, conditionTypeKey: "time", displayOrder: 2, displayable: true },
             endConditionValue: cooldownSec,
-            description: "Zone 1",
+            description: "Z1",
             stepAudioNote: null,
             targetType: { workoutTargetTypeId: 1, workoutTargetTypeKey: "no.target", displayOrder: 1 }
           });
@@ -208,7 +208,7 @@
             type: "ExecutableStepDTO",
             endCondition: { conditionTypeId: 1, conditionTypeKey: "lap.button", displayOrder: 2, displayable: true },
             endConditionValue: 0,
-            description: "Zone 1",
+            description: "Z1",
             stepAudioNote: null,
             targetType: { workoutTargetTypeId: 1, workoutTargetTypeKey: "no.target", displayOrder: 1 }
           });
@@ -296,3 +296,4 @@
   input.click();
 
 })();
+
