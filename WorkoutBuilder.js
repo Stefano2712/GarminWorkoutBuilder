@@ -230,7 +230,7 @@
                             workoutSteps: childSteps,
                             endCondition: { conditionTypeId: 7, conditionTypeKey: "iterations", displayOrder: 7, displayable: false },
                             type: "RepeatGroupDTO",
-                            skipLastRestStep: true
+                            skipLastRestStep: false
                         };
 
                         workoutSteps.push(repeatGroup);
@@ -392,3 +392,4 @@
     input.click();
 
 })();
+
