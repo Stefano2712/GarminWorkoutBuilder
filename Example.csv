@@ -1,2 +1,4 @@
-MorningRun,1,300,300,Zone5,1200,0,0
-Interval Training,2,300,0,Zone2,300,0,0,Zone5,120,30,5
+bike
+Foundation Ride;1;300;300;Zone2;1200;0;0
+Interval Training;2;300;0;Zone2;300;0;0;Zone5;120;30;5
+
